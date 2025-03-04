@@ -15,3 +15,5 @@ docker build -t docker-ssh-port-forward:latest -t geodavtech/docker-ssh-port-for
 docker login
 docker push geodavtech/docker-ssh-port-forward:latest
 ```
+
+this lives in the dockerhub here: https://hub.docker.com/repository/docker/geodavtech/docker-ssh-port-forward/general
