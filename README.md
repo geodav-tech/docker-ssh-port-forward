@@ -10,6 +10,8 @@ this is then deployed within a vnet in azure container apps to allow authenticat
 
 
 # build locally, push to docker hub
+```
 docker build -t docker-ssh-port-forward:latest -t geodavtech/docker-ssh-port-forward:latest --platform linux/amd64 .
 docker login
 docker push geodavtech/docker-ssh-port-forward:latest
+```
