@@ -6,7 +6,8 @@ RUN sed -i '/GatewayPorts/d' /etc/ssh/sshd_config
 RUN sed -i '/PermitTTY/d' /etc/ssh/sshd_config
 
 # then add them back in at the end with the values we want.
-RUN echo "\n# custom config baked into the docker image by geodav." | tee -a /etc/ssh/sshd_config
+RUN echo "" | tee -a /etc/ssh/sshd_config
+RUN echo "# custom config baked into the docker image by geodav." | tee -a /etc/ssh/sshd_config
 RUN echo "AllowTcpForwarding yes" | tee -a /etc/ssh/sshd_config
 RUN echo "GatewayPorts yes" | tee -a /etc/ssh/sshd_config
 RUN echo "PermitTTY no" | tee -a /etc/ssh/sshd_config
